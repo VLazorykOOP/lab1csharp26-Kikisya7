@@ -2,13 +2,22 @@ using System;
 
 namespace Lab1
 {
-    public class Task_Suit
+    public class Program  
     {
-        public static void Run()
+        // Точка входа программы
+        public static void Main()
         {
             Console.WriteLine("Введіть номер масті (1-4):");
-            int m = int.Parse(Console.ReadLine());
+            
+            int m;
+            // Безопасный ввод числа
+            if (!int.TryParse(Console.ReadLine(), out m))
+            {
+                Console.WriteLine("Неправильний ввід");
+                return;
+            }
 
+            // Проверяем значение
             if (m == 1)
             {
                 Console.WriteLine("піки");
