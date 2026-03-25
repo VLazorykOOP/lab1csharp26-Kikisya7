@@ -2,7 +2,7 @@ using System;
 
 namespace Lab1
 {
-    public class Task_Multiply
+    public class Program  // Класс Program вместо Main
     {
         // Функція обчислення добутку двох цілих чисел
         public static int Multiply(int a, int b)
@@ -10,7 +10,8 @@ namespace Lab1
             return a * b;
         }
 
-        public static void Run()
+        // Точка входу програми
+        public static void Main()
         {
             Console.WriteLine("Введіть перше число:");
             int a = int.Parse(Console.ReadLine());
