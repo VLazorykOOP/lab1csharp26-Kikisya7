@@ -5,6 +5,7 @@ class Task2Program
     static void Main()
     {
         // Вводимо число
+        Console.WriteLine();
         Console.Write("Введите целое число: ");
         int number = Convert.ToInt32(Console.ReadLine());
 
