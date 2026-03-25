@@ -2,9 +2,9 @@ using System;
 
 namespace Lab1
 {
-    public class Task_Formula
+    public class Program  // Точка входа
     {
-        public static void Run()
+        public static void Main()
         {
             Console.WriteLine("Введіть n:");
             int n = int.Parse(Console.ReadLine());
